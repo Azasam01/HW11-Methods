@@ -43,17 +43,16 @@ public class Main {
     }
 
     public static int deliveryTime(int deliveryDistance) {
-        int day = 1;
+        int day = 1 ;
 
         if (deliveryDistance < 20) {
-            System.out.println("Delivery within " + deliveryDistance + " km takes " + day + " day");
 
         } else if (deliveryDistance > 20 && deliveryDistance < 60) {
             day++;
-            System.out.println("Delivery within " + deliveryDistance + " km takes " + day + " days");
+
         } else if (deliveryDistance >= 60 && deliveryDistance < 100) {
             day += 2;
-            System.out.println("Delivery within " + deliveryDistance + " km takes " + day + " days");
+
         } else if (deliveryDistance > 100) {
             System.out.println("Delivery isn't available");
             return (-1);
@@ -65,7 +64,16 @@ public class Main {
 
     public static void task3() {
             System.out.println("Задача 3");
-            deliveryTime(75);
+
+            int day1 = deliveryTime(20);
+            int day2 = deliveryTime(50);
+            int day3 = deliveryTime(70);
+            int day4 = deliveryTime(200);
+        System.out.println("Для дистанции 20 время = " + day1);
+        System.out.println("Для дистанции 50 время = " + day2);
+        System.out.println("Для дистанции 70 время = " + day3);
+        System.out.println("Для дистанции 200 время = " + day4);
+
         }
     }
 
